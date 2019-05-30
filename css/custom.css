@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #bfc0c2;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 34px;
+    font-weight: 600;
+    color: #3B3B3C;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 18px;
+    color: #3B3B3C;
+    margin: 0;
+    padding: 0;
+}
+
+
+h3{
+    width: 100%;
+    font-size: 15px; 
+    padding-left: 30px;
+    display: block;
+}
+
+h3::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    display: block;
+}
+
+a{color: #FFF;}
+a:hover{text-decoration: none;}
+
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container{
+    max-width: 900px;
+    height: auto;
+    background-color: #FFF;
+    margin: 25px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    display: flex;
+}
+
+.coluna-direita, .coluna-esquerda{
+    display: flex;
+}
+
+.coluna-esquerda{
+    width: 30%;
+    padding: 5px;
+    background-color: #3B3B3C;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.espaco{
+    display: block;
+    height: 30px;
+}
+
+.foto-perfil{
+    width: 200px;
+    height: 200px;
+    /*background-color: #FFF;*/
+    border-radius: 250px;
+    display: flex;
+    margin: 25px auto;
+    background-image: url('../perfil/jean.jpg');
+    background-size: cover;
+}
+
+.acessos-digitais{
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.acessos-digitais > .icones-acessos-digitais{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.acessos-digitais > .icones-acessos-digitais a{
+    color: #999;
+    font-size: 18px;
+    transition: color 0.2s ease-out;
+}
+
+.acessos-digitais > .icones-acessos-digitais a:hover{
+    color: #FFF;
+    transition: color 0.2s ease-in;
+}
+
+.box-info{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.coluna-esquerda > .box-info > h3::after{ background-color: #FFF;}
+.coluna-esquerda > .box-info > h3{ color: #FFF; }
+
+.box-contatos{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dados{
+    width: 210px;
+    color: #FFF;
+    font-size: 13px;
+}
+
+.icone{
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.coluna-direita{
+    width: 70%;
+    padding: 70px 45px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.informacoes{
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoes > .periodo{
+    width: 40%;
+    padding: 0 10px;
+    text-align: right;
+}
+
+.informacoes > .descricao{
+    width: 60%;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.coluna-direita > h3::after{ background-color: #3B3B3C;}
+.coluna-direita > h3{ font-size: 16px; color: #3B3B3C; }
+.coluna-direita > h3 > i{ font-size: 17px; margin-right: 5px;}
+
+.box-tags{
+    padding-left: 25px;
+}
+
+.box-tags > span{
+    color: #FFF;
+    font-size: 11px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 1px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.projetos{
+    list-style: none;
+    font-size: 13px;
+}
+
+.projetos i{ font-size: 11px; }
+
+
+@media screen and (max-width: 720px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coluna-direita, .coluna-esquerda{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coluna-esquerda, .coluna-direita{
+        width: 100%;
+        padding: 25px;
+    }
+
+    .box-contatos{
+        justify-content: flex-start;
+    }
+
+    .projetos li{
+        float: left;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
